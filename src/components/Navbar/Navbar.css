@@ -1,0 +1,145 @@
+.navbar {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 0px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 0px;
+}
+.nav-upper{
+  box-shadow: 0px 1px 0px #E2E2E2, 0px 0px 4px rgba(0, 0, 0, 0.05);
+  height: 80px;
+  display: flex;
+}
+
+.nav-upperleft {
+  width: 125px;
+  border-right: 1px solid #E2E2E2;
+  height: 100%;
+  color: #1A1919;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 0 30px;
+}
+
+.nav-upperright {
+  padding: 0 30px;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+} 
+
+.nav-right {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.nav-upperright-right {
+  width: 220px;
+  justify-content: space-between;
+}
+
+.mail-icon {
+  margin-right: 25px;
+  position: relative;
+}
+
+.mail-icon:hover {
+  cursor: pointer;
+}
+
+.mail-badge {
+  margin-right: 35px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #2995DA;
+  height: 18px;
+  width: 18px;
+  left: 13px;
+  top: -8px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+
+.nav-lower {
+  height: 146px;
+}
+
+.navlower-upper {
+  height: 65%;
+  justify-content:space-between;
+  padding: 0 30px 0 45px;
+
+}
+
+.teams {
+  gap:15px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1A1919;
+}
+
+.nav-butt {
+  background: #40D2BF;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  height: 36px;
+  width: 189px;
+  border: none;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.nav-butt:hover {
+  cursor: pointer;
+  background: #39f1d9;
+}
+
+.navlower-lower {
+  justify-content: space-between;
+  padding: 0 30px 0 45px;
+  height: 35%;
+  position: relative;
+}
+
+.filters * {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.all.active, .favourites.active, .archives.active, .all:hover, .favourites:hover, .archives:hover {
+  cursor: pointer;
+  color: #0083E3;
+}
+
+.underline {
+  position: absolute;
+  height:100%;
+  border-bottom: 3px solid #0083E3;
+  transition: 0.2s ease-out;
+  pointer-events: none;
+}
+
+.searchbox{
+  gap: 10px;
+}
+
+.searchbox > input {
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  margin-right: 50px;
+}
+
+.searchbox > input::placeholder {
+  color: #999999;
+  font-weight: 500;
+}
+
+

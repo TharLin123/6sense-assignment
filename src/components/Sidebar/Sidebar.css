@@ -1,0 +1,28 @@
+.sidebar {
+  width: 80px;
+  height: 1200px;
+  background-color: #042235;
+  box-shadow: -4px 0px 4px 0px rgba(2, 15, 24, 0.5695) inset;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5) inset;
+  justify-content: space-between;
+}
+
+.logo-box {
+  height: 80px;
+  width: 80px;
+  border-radius: 0px;
+}
+
+.logo-box:hover {
+  background: #2995DA;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.logo-box >*{
+  pointer-events: none;
+}
+
+.logo-box.active {
+  background: #2995DA;
+}
