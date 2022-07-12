@@ -1,7 +1,7 @@
 import React from 'react'
 import logos from '../../constants/logos'
 
-const NavUpper = () => {
+const NavUpper = ({fetchState}) => {
   return (
     <div className='nav-upper'>
         <div className='nav-upperleft app-flex'>
@@ -11,19 +11,20 @@ const NavUpper = () => {
           <div>
             <span>Teams</span>
           </div>
-          
           <div className='nav-upperright-right app-flex'>
             <div className='mail-icon'>
               <img src={logos.mail} alt='mail'/>
               <div className='mail-badge app-flex'>
-                3
+                {fetchState.loading ? 0 : fetchState.data.current_user.notifications_count}
               </div>
             </div>
-            <span className='secondary-fontstyle'>Hello, John</span>
+            <span className='secondary-fontstyle'> Hello, {fetchState.loading ? '' : fetchState.data.current_user.name}</span>
             <div>
-              <img src={logos.john} alt='mail'/>
+            <div className='image-container'>
+            {fetchState.loading ? '' : <img src={fetchState.data.current_user.avatar} alt='mail'/>}
             </div>
-            <img src={logos.caret} alt='mail'/>
+            </div>
+              <img src={logos.caret} alt='mail'/>
           </div>
         </div>
       </div>

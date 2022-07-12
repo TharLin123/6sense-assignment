@@ -73,7 +73,7 @@
 
 }
 
-.teams {
+.teams-icon {
   gap:15px;
   font-size: 30px;
   line-height: 36px;
@@ -109,11 +109,11 @@
 .filters * {
   font-size: 18px;
   line-height: 22px;
-  padding: 0 15px;
+  padding: 0 35px;
   height: 100%;
 }
 
-.all.active, .favourites.active, .archives.active, .all:hover, .favourites:hover, .archives:hover {
+.filters *.active, .filters *:hover {
   cursor: pointer;
   color: #0083E3;
 }
@@ -122,8 +122,9 @@
   position: absolute;
   height:100%;
   border-bottom: 3px solid #0083E3;
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
   pointer-events: none;
+  padding: 0;
 }
 
 .searchbox{

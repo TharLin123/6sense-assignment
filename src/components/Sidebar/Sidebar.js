@@ -3,16 +3,17 @@ import './Sidebar.css'
 import logos from '../../constants/logos'
 import SidebarLogo from './SidebarLogo'
 
+const navBarInitialState = {
+  white: '',
+  campaign: '',
+  teams: 'active',
+  leads: '',
+  reports: '',
+  help: ''
+}
+
 const Sidebar = () => {
 
-  const navBarInitialState = {
-    white: '',
-    campaign: '',
-    teams: 'active',
-    leads: '',
-    reports: '',
-    help: ''
-  }
   const [ navBarState, setState ] = useState(navBarInitialState); 
 
   const navBarToggleActive = (e) => {

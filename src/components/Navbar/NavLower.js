@@ -1,18 +1,9 @@
 import React,{useState} from 'react'
 import logos from '../../constants/logos'
+import {initialFilter, initialUnderlinePos} from '../../constants/filterConstants'
 
-const initialFilter = {
-  all:'active',
-  favourites: '',
-  archives:'',
-}
-
-const initialUnderlinePos = {
-  width:'20px',
-  left: '46px'
-}
-
-const NavLower = () => {
+const NavLower = ({setFilter}) => {
+  
   const [filterState, setFilterState] = useState(initialFilter)
   const [underlinePos, setunderlinePos] = useState(initialUnderlinePos)
 
@@ -23,15 +14,24 @@ const NavLower = () => {
       archives:'',
       [e.target.id]: 'active'
     })
-    if(e.target.id === 'all')setunderlinePos(initialUnderlinePos)
-    else if(e.target.id === 'favourites')setunderlinePos({ width: '70px', left: '101px'})
-    else if(e.target.id === 'archives')setunderlinePos({ width: '50px', left: '212px'})
+    if(e.target.id === 'all') {
+      setunderlinePos({...initialUnderlinePos});
+      setFilter('ALL');
+    }
+    else if(e.target.id === 'favourites'){
+      setunderlinePos({ width: '90px', left: '165px'}); 
+      setFilter('FAVORITES');
+    }
+    else if(e.target.id === 'archives'){
+      setunderlinePos({ width: '80px', left: '316px'});
+      setFilter('ARCHIVES');
+    }
   }
 
   return (
     <div className='nav-lower'>
         <div className='navlower-upper app-flex'>
-          <div className='teams app-flex'>
+          <div className='teams-icon app-flex'>
             <img src={logos.companies} alt='companies'/>
             <span>Teams</span>
           </div>

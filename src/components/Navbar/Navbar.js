@@ -3,11 +3,11 @@ import React from 'react'
 import NavLower from './NavLower'
 import NavUpper from './NavUpper'
 
-const Navbar = () => {
+const Navbar = ({fetchState, setFilterState}) => {
   return (
     <div className='navbar'>
-      <NavUpper/>
-      <NavLower/>
+      <NavUpper fetchState={fetchState}/>
+      <NavLower setFilter={setFilterState}/>
     </div>
   )
 }

@@ -24,10 +24,11 @@
   align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.team-activity {
+  margin: 40px;
+
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .App-header {
@@ -45,11 +46,13 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-container {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+}
+
+.image-container img{
+  width: 100%;
+  height: auto;
 }

@@ -10,6 +10,8 @@ import caret from '../assets/navbar/caret down.svg'
 import companies from '../assets/navbar/icon companies.svg'
 import plus from '../assets/navbar/plus.svg'
 import search from '../assets/navbar/icon-search.svg'
+import conversation from '../assets/teamboard/icon-conversations-small.svg'
+import smallLead from '../assets/teamboard/icon-leads-small.svg'
 
 export default {
   campaign,
@@ -23,5 +25,7 @@ export default {
   caret,
   companies,
   plus,
-  search
+  search,
+  conversation,
+  smallLead
 }
