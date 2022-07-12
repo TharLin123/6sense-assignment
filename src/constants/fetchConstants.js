@@ -21,7 +21,7 @@ export const fetchReducer = (state,action) => {
     case 'FETCH_ERROR':
       return {
         loading: false,
-        error: 'error fetch data',
+        error: action.payload,
         data: {}
       }
     default:
